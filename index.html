@@ -24,16 +24,16 @@
       crossorigin="anonymous"
     />
 
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <button id="scroll-up">
-        <i class="fa-solid fa-arrow-up"></i>
+      <i class="fa-solid fa-arrow-up"></i>
     </button>
     <section class="header">
       <nav>
         <a href="index.html" id="logo-gamehub"
-          ><img src="Logo-Gamehub.jpg"
+          ><img src="./assets/Logo-Gamehub.jpg"
         /></a>
         <div class="nav-links">
           <div id="right-nav-btn">
@@ -41,15 +41,15 @@
             <i class="fa-solid fa-square-xmark" id="hide-nav"></i>
           </div>
           <ul>
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">ABOUT</a></li>
-            <li><a href="#">COMMENTS</a></li>
-            <li><a href="#">SEARCH HISTORY</a></li>
-            <li><a href="#">CONTACT</a></li>
+            <li><a href="#" id="home-link">HOME</a></li>
+            <li><a href="#" id="about-link">ABOUT</a></li>
+            <li><a href="#" id="comments-link">COMMENTS</a></li>
+            <li><a href="#" id="history-link">SEARCH HISTORY</a></li>
+            <li><a href="#" id="contact-link">CONTACT</a></li>
           </ul>
         </div>
         <div class="login-btn">
-          <button>Login</button>
+          <button id="login-btn">Login</button>
         </div>
       </nav>
 
@@ -124,25 +124,25 @@
       </p>
       <div class="my-row">
         <div class="game-genre-col">
-          <img src="sport-video-games.jpg_large" />
+          <img src="./assets/sport-video-games.jpg_large" />
           <div class="layer">
             <h3>Sport Video Games</h3>
           </div>
         </div>
         <div class="game-genre-col">
-          <img src="Moba-game.jpg" />
+          <img src="./assets/Moba-game.jpg" />
           <div class="layer">
             <h3>Moba Games</h3>
           </div>
         </div>
         <div class="game-genre-col">
-          <img src="FPS-games.jpg" />
+          <img src="./assets/FPS-games.jpg" />
           <div class="layer">
             <h3>FPS Games</h3>
           </div>
         </div>
         <div class="game-genre-col">
-          <img src="action-rpg-game.webp" />
+          <img src="./assets/action-rpg-game.webp" />
           <div class="layer">
             <h3>Action RPG</h3>
           </div>
@@ -165,9 +165,9 @@
       >
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <div class="row w-100 justify-content-center gap-3">
-              <div class="col col-lg-3 col-sm-12 p-3 review-item">
-                <img src="user-avatar1-reviews.jpg" />
+            <div class="d-flex justify-content-center w-100">
+              <div class="w-75 p-5 review-item">
+                <img src="./assets/user-avatar1-reviews.jpg" />
                 <p>
                   “I’ve been using GameHub for months now, and I absolutely love
                   how easy it is to stay updated on the latest games. The
@@ -176,9 +176,8 @@
                   features make it my go-to site for all things gaming.”
                 </p>
                 <div class="d-flex justify-content-between align-items-center">
-                  <h3>David Byer</h3>
+                  <h3>Michael Kean</h3>
                   <div class="stars d-flex justify-content-end">
-                    <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
@@ -186,34 +185,18 @@
                   </div>
                 </div>
               </div>
-              <div class="col col-lg-3 col-sm-12 p-3 review-item">
-                <img src="user-avatar1-reviews.jpg" />
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="d-flex justify-content-center w-100">
+              <div class="w-75 p-5 review-item">
+                <img src="./assets/user-avatar2-reviews.jpg" />
                 <p>
-                  “I’ve been using GameHub for months now, and I absolutely love
-                  how easy it is to stay updated on the latest games. The
-                  reviews are spot on and have helped me avoid wasting money on
-                  disappointing titles. The clean layout and user-friendly
-                  features make it my go-to site for all things gaming.”
-                </p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <h3>David Byer</h3>
-                  <div class="stars d-flex justify-content-end">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </div>
-                </div>
-              </div>
-              <div class="col col-lg-3 col-sm-12 p-3 review-item">
-                <img src="user-avatar1-reviews.jpg" />
-                <p>
-                  “I’ve been using GameHub for months now, and I absolutely love
-                  how easy it is to stay updated on the latest games. The
-                  reviews are spot on and have helped me avoid wasting money on
-                  disappointing titles. The clean layout and user-friendly
-                  features make it my go-to site for all things gaming.”
+                  “GameHub makes discovering new games a breeze. I especially
+                  like the game search history function—it helps me keep track
+                  of what I’ve explored. The variety of genres and in-depth
+                  content show that this platform really understands what gamers
+                  are looking for.”
                 </p>
                 <div class="d-flex justify-content-between align-items-center">
                   <h3>David Byer</h3>
@@ -229,122 +212,31 @@
             </div>
           </div>
           <div class="carousel-item">
-            <div class="row w-100 justify-content-center gap-3">
-              <div class="col col-lg-3 col-sm-12 p-3 review-item">
-                <img src="user-avatar2-reviews.jpg" />
+            <div class="d-flex justify-content-center w-100">
+              <div class="w-75 p-5 review-item">
+                <img src="./assets/user-avatar3-reviews.webp" />
                 <p>
-                  “I’ve been using GameHub for months now, and I absolutely love
-                  how easy it is to stay updated on the latest games. The
-                  reviews are spot on and have helped me avoid wasting money on
-                  disappointing titles. The clean layout and user-friendly
-                  features make it my go-to site for all things gaming.”
+                  "As someone who’s always on the lookout for new and exciting
+                  games to play, I’ve found GameHub to be an absolute gem. The
+                  platform doesn’t just offer a massive library of games across
+                  various genres—it also makes discovering them feel effortless
+                  and even fun. One of the standout features for me is the game
+                  search history function. It may seem like a small detail, but
+                  being able to revisit what I’ve searched for in the past helps
+                  me keep track of what I’ve played, what I want to try next,
+                  and even what I didn’t quite enjoy. This level of organization
+                  really enhances my overall experience. What’s more impressive
+                  is how well GameHub seems to understand the mindset of gamers.
+                  The way the content is curated—with detailed descriptions,
+                  smart recommendations, and an intuitive layout—makes it
+                  obvious that this platform was designed by people who truly
+                  understand gaming culture. It doesn’t just throw titles at
+                  you; it guides you through a world of possibilities tailored
+                  to your tastes. In my opinion, GameHub has set a new standard
+                  for game discovery platforms."
                 </p>
                 <div class="d-flex justify-content-between align-items-center">
-                  <h3>David Byer</h3>
-                  <div class="stars d-flex justify-content-end">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </div>
-                </div>
-              </div>
-              <div class="col col-lg-3 col-sm-12 p-3 review-item">
-                <img src="user-avatar1-reviews.jpg" />
-                <p>
-                  “I’ve been using GameHub for months now, and I absolutely love
-                  how easy it is to stay updated on the latest games. The
-                  reviews are spot on and have helped me avoid wasting money on
-                  disappointing titles. The clean layout and user-friendly
-                  features make it my go-to site for all things gaming.”
-                </p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <h3>David Byer</h3>
-                  <div class="stars d-flex justify-content-end">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </div>
-                </div>
-              </div>
-              <div class="col col-lg-3 col-sm-12 p-3 review-item">
-                <img src="user-avatar1-reviews.jpg" />
-                <p>
-                  “I’ve been using GameHub for months now, and I absolutely love
-                  how easy it is to stay updated on the latest games. The
-                  reviews are spot on and have helped me avoid wasting money on
-                  disappointing titles. The clean layout and user-friendly
-                  features make it my go-to site for all things gaming.”
-                </p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <h3>David Byer</h3>
-                  <div class="stars d-flex justify-content-end">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="carousel-item active">
-            <div class="row w-100 justify-content-center gap-3">
-              <div class="col col-lg-3 col-sm-12 p-3 review-item">
-                <img src="user-avatar1-reviews.jpg" />
-                <p>
-                  “I’ve been using GameHub for months now, and I absolutely love
-                  how easy it is to stay updated on the latest games. The
-                  reviews are spot on and have helped me avoid wasting money on
-                  disappointing titles. The clean layout and user-friendly
-                  features make it my go-to site for all things gaming.”
-                </p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <h3>David Byer</h3>
-                  <div class="stars d-flex justify-content-end">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </div>
-                </div>
-              </div>
-              <div class="col col-lg-3 col-sm-12 p-3 review-item">
-                <img src="user-avatar1-reviews.jpg" />
-                <p>
-                  “I’ve been using GameHub for months now, and I absolutely love
-                  how easy it is to stay updated on the latest games. The
-                  reviews are spot on and have helped me avoid wasting money on
-                  disappointing titles. The clean layout and user-friendly
-                  features make it my go-to site for all things gaming.”
-                </p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <h3>David Byer</h3>
-                  <div class="stars d-flex justify-content-end">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </div>
-                </div>
-              </div>
-              <div class="col col-lg-3 col-sm-12 p-3 review-item">
-                <img src="user-avatar1-reviews.jpg" />
-                <p>
-                  “I’ve been using GameHub for months now, and I absolutely love
-                  how easy it is to stay updated on the latest games. The
-                  reviews are spot on and have helped me avoid wasting money on
-                  disappointing titles. The clean layout and user-friendly
-                  features make it my go-to site for all things gaming.”
-                </p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <h3>David Byer</h3>
+                  <h3>Mark Johnson</h3>
                   <div class="stars d-flex justify-content-end">
                     <i class="fa-solid fa-star"></i>
                     <i class="fa-solid fa-star"></i>
@@ -385,7 +277,7 @@
         CONTACT WITH US FOR THE ERROR OR YOUR <br />DESIDERATE ABOUT THE
         WEBSITE!
       </h1>
-      <a href="" class="contact-btn">CONTACT US</a>
+      <a href="./pages/contact.html" class="contact-btn">CONTACT US</a>
     </section>
 
     <!-- -----Footer----- -->
@@ -418,5 +310,6 @@
 
     <script src="./js/nav.js"></script>
     <script src="./js/scroll-up.js"></script>
+    <script src="./js/api.js"></script>
   </body>
 </html>
