@@ -15,9 +15,6 @@ document.addEventListener("DOMContentLoaded", function () {
     ? {
         href: pagesURL + "login.html",
         text: "Logout",
-        func: function () {
-          localStorage.removeItem("currentUser");
-        },
       }
     : { href: pagesURL + "login.html", text: "Login" };
   // tao obj giu link con
@@ -42,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
   login_btn.innerText = login_btn_data.text;
   login_btn.addEventListener("click", function () {
     // xu ly xoa du lieu (neu co)
-    login_btn_data.func();
+    localStorage.removeItem("currentUser");
     // chuyen huong
     window.location.href = login_btn_data.href;
   });

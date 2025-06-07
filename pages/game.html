@@ -33,14 +33,14 @@
         </div>
       </nav>
 
-      <h1 class="game-title">Arena Of Valor</h1>
+      <h1 class="game-title" id="game-title">Arena Of Valor</h1>
     </section>
 
     <!-- -----content----- -->
 
     <div class="game">
       <div class="game-content">
-        <div class="genre-tags">
+        <div class="genre-tags" id="game-genres">
           <button>MOBA</button>
           <button>Strategy</button>
           <button>Antagonistic</button>
@@ -48,30 +48,36 @@
 
         <div class="section">
           <h3 class="section-title">Introduction</h3>
-          <p class="description">
+          <p>
+            <a href="#" id="game-link" target="_blank"
+              >Link game for more information!</a
+            >
+          </p>
+
+          <p class="description" id="game-description">
             Arena of Valor (also known as Liên Quân Mobile in Vietnam) is a
             multiplayer online battle arena (MOBA) game developed by Tencent
             Games. It brings fast-paced, action-packed gameplay with 5v5 team
             battles, where players choose from a wide variety of heroes, each
             with unique abilities and roles. The game features a fast
             matchmaking system, allowing players to dive into intense battles
-            with friends or players from around the world. <br>Arena of Valor is
-            designed to be easily accessible, with quick gameplay sessions that
-            last between 10 to 15 minutes, making it perfect for mobile gaming
-            on the go. The game’s strategic depth comes from the combination of
-            hero selection, team coordination, and map control. Each match
-            involves taking down towers, defeating powerful monsters, and
-            strategically placing yourself to outsmart the enemy team. Players
-            need to work together to claim victory by taking down the enemy's
-            core while defending their own. With its stunning graphics, engaging
-            mechanics, and a strong community of players, Arena of Valor has
-            become one of the most popular mobile MOBAs globally.
+            with friends or players from around the world. <br />Arena of Valor
+            is designed to be easily accessible, with quick gameplay sessions
+            that last between 10 to 15 minutes, making it perfect for mobile
+            gaming on the go. The game’s strategic depth comes from the
+            combination of hero selection, team coordination, and map control.
+            Each match involves taking down towers, defeating powerful monsters,
+            and strategically placing yourself to outsmart the enemy team.
+            Players need to work together to claim victory by taking down the
+            enemy's core while defending their own. With its stunning graphics,
+            engaging mechanics, and a strong community of players, Arena of
+            Valor has become one of the most popular mobile MOBAs globally.
           </p>
         </div>
 
         <div class="section">
-          <h3 class="section-title">Function</h3>
-          <div class="functions-grid">
+          <h3 class="section-title">Functions</h3>
+          <div class="functions-grid" id="game-functions">
             <div class="function-item">
               <i class="fa-solid fa-headset"></i>
               <span class="function-span">Diverse Game Modes</span>
@@ -93,10 +99,13 @@
 
         <div class="section">
           <h3 class="section-title">Device Requirements</h3>
-          <div class="requirements">
+          <div class="requirements" id="game-requirements">
             <div class="requirement-item">
               <i class="fa-solid fa-mobile"></i>
-              <span>Operating System: iOS 9.0 or higher / Android 4.0.3 or higher</span>
+              <span
+                >Operating System: iOS 9.0 or higher / Android 4.0.3 or
+                higher</span
+              >
             </div>
             <div class="requirement-item">
               <i class="fa-solid fa-memory"></i>
@@ -111,7 +120,7 @@
 
         <div class="section">
           <h3 class="section-title">Similar Games</h3>
-          <div class="similar-games">
+          <div class="similar-games" id="similar-games">
             <div class="similar-item">
               <i class="fa-solid fa-bolt"></i>
               <span>League of Legends: Wild Rift</span>
@@ -124,6 +133,50 @@
               <i class="fa-solid fa-mobile"></i>
               <span>Mobile Legends: Bang Bang</span>
             </div>
+          </div>
+        </div>
+
+        <div class="section">
+          <!-- comment form -->
+          <div class="rating-container">
+            <style>
+              .stars {
+                margin-bottom: 20px;
+                display: flex;
+                justify-content: center;
+              }
+
+              .stars i {
+                font-size: 30px;
+                color: #ccc; /* Default star color */
+                cursor: pointer;
+                margin: 0 5px;
+                transition: color 0.2s ease-in-out;
+              }
+
+              .stars i.selected,
+              .stars i:hover {
+                color: #ffc107; /* Gold color for selected/hovered stars */
+              }
+              #thankYouMessage {
+                margin-top: 20px;
+                color: #28a745;
+                font-weight: bold;
+              }
+            </style>
+            <h2>Rate This Game!</h2>
+            <div class="stars">
+              <i class="fa-solid fa-star" data-rating="1"></i>
+              <i class="fa-solid fa-star" data-rating="2"></i>
+              <i class="fa-solid fa-star" data-rating="3"></i>
+              <i class="fa-solid fa-star" data-rating="4"></i>
+              <i class="fa-solid fa-star" data-rating="5"></i>
+            </div>
+            <textarea id="message" placeholder="Leave a message..."></textarea>
+            <button id="submitRating">Submit Rating</button>
+            <p id="thankYouMessage" style="display: none">
+              Thank you for your feedback!
+            </p>
           </div>
         </div>
       </div>
@@ -152,5 +205,7 @@
     </section>
 
     <script src="../js/nav.js"></script>
+    <script src="../js/gemini.js"></script>
+    <script src="../js/rating.js"></script>
   </body>
 </html>
